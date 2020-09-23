@@ -1,0 +1,133 @@
+/* 
+  Exercises to complete this week:
+  Exercise 3.1.1 - On your navigation and footer classes, add some consistent 
+                   padding to the top, left, bottom, and right using 0.5rem. 
+                   This should provide some space between the content and the edge of the screen.
+  Exercise 3.1.2 - Similar to the above, add some margins, again using 0.5rem, to your h1, h2, p, img 
+                   elements in the main area of the page. You can then experiment with different amounts 
+                   to make it look how you imagine. 
+
+  Exercise 3.2.1 - Improve your navigation by making each item stack horizontally 
+                   (inline) by using the display property.
+  Exercise 3.2.2 - Make the copyright and social elements in your footer also 
+                   stack horizontally (inline), again using the display property.
+
+  Exercise 3.3.1 - Add a media query to your CSS which changes the background colour 
+                   of your page body when you’re on desktop. Resize your browser window and see what happens. 
+  Exercise 3.3.2 - Now update the media query from the previous exercise to change the font size as the page 
+                   scales: 16px for mobile, 18px for desktop. If you don’t already have specific rem font 
+                   sizing on your h1 or p elements, try this now and resize your browser window to see the effect.
+
+  Exercise 3.4.1 - For desktop, make your introductory paragraph and image elements 50% of the width 
+                   of their parent, and set that parent to display flex, and their direction to row. 
+                   On mobile, make sure they are full width and block.
+  Exercise 3.4.2 - On desktop, make the header display flex, and position your h1 and h2 elements 
+                   in the center by using the align-items property.
+*/
+
+/*
+  Elements
+*/
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+li {
+  display:inline;
+  
+}
+body   {
+  background-color: pink; 
+}
+
+
+@media only screen and (min-width: 768px)   {
+  body   {
+      background-color: blue;
+      font-size (min-width: 18px)
+  }
+ p 
+  width: 50%
+
+  display:flex;
+  align-items: centre; 
+      }
+}
+
+h1 {
+  font-size: 1.5rem;
+  display:flex; 
+  align-items:center;
+}
+
+h2 {
+  font-size: 1.5rem;#
+  margin: 0.5rem 
+  display:flex; 
+  align-items:center;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+a {
+  color: #f54996;
+  text-decoration: none;
+}
+
+
+/*
+  Classes
+*/
+
+.navigation {
+  background: black;
+  color: #fff;
+  padding-top:0.5rem:
+  padding-bottom: 0.5rem;
+  padding-left:0 0.5rem;
+  padding-right: 0.5rem;
+
+  /* Example here: https://www.w3schools.com/cssref/css3_pr_box-shadow.asp */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+  font-size: 1.2rem;
+}
+
+.navigation a {
+  color: #fff;
+}
+
+.footer {
+  background: #f54996;
+  color: #fff;
+  font-size: 1.2rem;
+  padding-top:0.5rem:
+  padding-bottom: 0.5rem;
+  padding-left:0 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.footer a {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  display:inline;
+}
+
+.color-secondary {
+  color: #f54996;
+}
+
+/*
+  IDs
+*/
+
+#active a {
+  border-bottom: 2px solid #f54996;
+}
